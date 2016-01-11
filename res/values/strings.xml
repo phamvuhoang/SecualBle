@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SecualBle</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Menu items -->
+    <string name="demo_start">デモ開始</string>
+    <string name="demo_stop">デモ停止</string>
+    <string name="menu_refresh"></string>
+    
+    <string name="post_to_server">Post 2 server</string>
+    <string name="back">Back</string>
+</resources>

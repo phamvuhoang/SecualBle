@@ -1,0 +1,70 @@
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <EditText
+	    android:id="@+id/app_id"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:hint="appID"
+	    android:inputType="text"
+	    android:text="SECUAL-APP-001" 
+	    android:layout_alignParentLeft="true"
+	    />
+    
+    <EditText
+	    android:id="@+id/password"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:hint="password"
+	    android:inputType="text"
+	    android:text="12345678" 
+	    android:layout_below="@id/app_id" 
+	    android:layout_alignParentLeft="true"
+	    />
+    
+    <EditText
+	    android:id="@+id/name"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:hint="name"
+	    android:inputType="text"
+	    android:text="alert100" 
+	    android:layout_below="@id/password" 
+	    android:layout_alignParentLeft="true"
+	    />
+    
+    <Spinner
+	    android:id="@+id/alert"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:spinnerMode="dialog" 
+	    android:layout_below="@id/name" 
+	    android:layout_alignParentLeft="true"
+	    />
+    
+    <Button
+		android:id="@+id/post"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentRight="true"
+		android:text="Post" 
+		android:onClick="onButtonPostClick" 
+		android:layout_below="@id/alert" />
+    
+    <TextView
+	    android:id="@+id/result"
+	    android:layout_width="match_parent"
+	    android:layout_height="fill_parent"
+	    android:gravity="bottom"
+		android:layout_alignParentBottom="true"
+	    android:textSize="15sp"
+	    android:textStyle="normal" 
+	    android:background="#EC7703"
+	    android:layout_below="@id/post" 
+	    android:scrollbars = "vertical" />
+
+</RelativeLayout>
