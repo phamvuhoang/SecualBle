@@ -1,10 +1,3 @@
-/**
- * The class manage progress dialog 
- * @author Hoang
- * @email phamvuhoang@gmail.com
- * @createDate 2016.01.09
- */
-
 package com.secualinc.common;
 
 import android.app.ProgressDialog;

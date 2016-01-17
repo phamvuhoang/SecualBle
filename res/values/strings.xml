@@ -12,4 +12,11 @@
     
     <string name="post_to_server">Post 2 server</string>
     <string name="back">Back</string>
+    
+    <string name="none_paired">No devices have been paired</string>
+    
+    <string name="title_connecting">Connecting...</string>
+    <string name="title_connected_to">Connected to </string>
+    <string name="title_not_connected">Not connected</string>
+    <string name="bt_not_enabled_leaving">Bluetooth was not enabled. Service will stop.</string>
 </resources>

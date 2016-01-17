@@ -63,7 +63,7 @@ public class MainActivity extends Activity {
 		// 対象デバイスがBLEをサポートしているかのチェック。
         if (!getPackageManager().hasSystemFeature(PackageManager.FEATURE_BLUETOOTH_LE)) {
             Toast.makeText(this, "このデバイスではBLEはサポートされておりません。", Toast.LENGTH_SHORT).show();
-            finish();
+           // finish();
         }
 
         // Bluetooth adapter 初期化.  （API 18以上が必要)
@@ -73,7 +73,7 @@ public class MainActivity extends Activity {
         // 対象デバイスがBluetoothをサポートしているかのチェック.
         if (mBluetoothAdapter == null) {
             Toast.makeText(this, "Bluetoothがサポートされておりません。", Toast.LENGTH_SHORT).show();
-            finish();
+            // finish();
             return;
         }
         
@@ -122,7 +122,7 @@ public class MainActivity extends Activity {
 				break;
 		// Rederect to post activity
 			case R.id.post_server:
-				Intent intent = new Intent(this, PostActivity.class);
+				Intent intent = new Intent(this, DeviceActivity.class);
 				intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP|Intent.FLAG_ACTIVITY_NO_ANIMATION);
 				startActivity(intent);
 				finish();
@@ -216,6 +216,9 @@ public class MainActivity extends Activity {
             runOnUiThread(new Runnable() {
                 @Override
                 public void run() {
+        			Log.d("Debug","charenge connect");
+        			bluetoothGatt = device.connectGatt(getApplicationContext(), false, mGattCallBack);
+
                 	if(device.getName().equals("30") || device.getName().equals("31") || device.getName().equals("32") || device.getName().equals("33")){
                 		Log.d("Debug","DeviceName: "+device.getName());
                 		Log.d("Debug","Address: "+device.getAddress());

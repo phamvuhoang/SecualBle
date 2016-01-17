@@ -1,6 +1,6 @@
 /**
  * The class of application. 
- * @author Hoang
+ * @author Pham Vu Hoang
  * @email phamvuhoang@gmail.com
  * @createDate 2016.01.09
  */
